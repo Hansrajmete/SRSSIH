@@ -36,17 +36,17 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index">Home</a></li>
           <li class="active"><a href="#">Application Details</a></li>
-          <li><a href="Status.html">Status</a></li>
-          <li><a href="JobOpenings.html">Job Openings</a></li>
+          <li><a href="Status">Status</a></li>
+          <li><a href="JobOpenings">Job Openings</a></li>
           <li><a href="#">Contact US</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Abhishek <span class="caret"></span></a>
+          <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> {{ uname }} <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Logout</a></li>
+              <li><a href="applicantdetails">Profile</a></li>
+              <li><a href="logout">Logout</a></li>
             </ul>
           </li>
         </ul>
@@ -83,7 +83,47 @@
             <h2 style="text-align: center;">Application Details</h2>
             <hr/>
             <br/>
-            <left>
+            <left>{% if data %}
+
+
+              <form class="form-inline" role="form" method="POST" enctype="multipart/form-data" action="savedata">
+                {% csrf_token %}<div class="form-group">
+                  <label>First Name: &ensp;&ensp;&ensp;&ensp;</label><input value="{{ data.first_name }}" type="text" class="form-control" name="FirstName" placeholder="First Name" required>
+                </div>
+                <br/><br/>
+                <div class="form-group">
+                  <label>Middle Name: &ensp;&ensp; </label><input type="text" value="{{ data.middle_name }}" class="form-control" name="MiddleName" placeholder="Middle Name" required>
+                </div>
+                <br/><br/>
+
+                <div class="form-group">
+                  <label>Last Name: &ensp;&ensp;&ensp;&ensp; </label><input type="text" value="{{ data.last_name }}" class="form-control" name="LastName" placeholder="Last Name" required>
+                </div><br/><br/>
+
+                <div class="form--group">
+                  <label>Permanent<br/> Address: &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  </label><textarea class="form-control"  name="Address"  placeholder="Address" required>{{ data.address }}</textarea>
+                </div><br/>
+
+                <div class="form-group">
+                  <label>Country: &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; </label><input type="text" class="form-control"  value="{{ data.country }}" name="Country" placeholder="Country" required>
+                </div><br/><br/>
+
+                <div class="form-group">
+                  <label>State: &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; </label><input type="text" class="form-control"  value="{{ data.state }}" name="State" placeholder="State" required>
+                </div><br/><br/>
+
+                <div class="radio">
+                  <b>Gender : &ensp;&ensp;&ensp;&ensp;&ensp;</b>
+                  <label><input type="radio" name="Gender" value="Male"{% ifequal data.gender "Male"%} checked="checked" {% endifequal %} required> Male&nbsp;&nbsp;</label>
+                  <label><input type="radio" name="Gender" value="Female"{% ifequal data.gender "Female"%} checked="checked" {% endifequal %} required> Female&nbsp;&nbsp;</label>
+                  <label><input type="radio" name="Gender" value="Others" {% ifequal data.gender "Others"%} checked="checked" {% endifequal %} required> Others</label>
+                </div>
+                <br/>
+                <hr/>
+                <button type="submit" class="btn btn-default" name="SubmitDetails" style="background-color: #073F54;color:#fff;margin-left: 200px; width: 150px">Submit</button>{% if saved %}Saved!!{% endif %}
+                <br/><br/>
+              </form>
+                {% else %}
               <form class="form-inline" role="form" method="POST" enctype="multipart/form-data" action="savedata">
                 {% csrf_token %}<div class="form-group">
                   <label>First Name: &ensp;&ensp;&ensp;&ensp;</label><input type="text" class="form-control" name="FirstName" placeholder="First Name" required>
@@ -121,6 +161,7 @@
                 <button type="submit" class="btn btn-default" name="SubmitDetails" style="background-color: #073F54;color:#fff;margin-left: 200px; width: 150px">Submit</button>
                 <br/><br/>
               </form>
+                {% endif %}
             </left>
           </div>
           <div class="bhoechie-tab-content">
@@ -243,7 +284,7 @@
             <a href="http://www.nielit.gov.in/content/mou-industry-academic-institutions-universities" class="ahref">MoUs</a>
           </p>
           <p>
-            <a href="JobOpenings.html0" class="ahref">Opportunities</a>
+            <a href="JobOpenings" class="ahref">Opportunities</a>
           </p>
           <p>
             <a href="http://www.nielit.gov.in/node/2361" class="ahref" class="ahref">Grievance</a>

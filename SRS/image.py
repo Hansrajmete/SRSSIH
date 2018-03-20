@@ -57,20 +57,41 @@ dicto = {}
 
 # [a,p,o,cnt]
 def sign_up(username,password,mobile):
-    import sqlite3
-    import pandas as pd
-    file = '/home/super--user/PycharmProjects/SRS/db.sqlite3'
-    conn = sqlite3.connect(file)
-    # conn.row_factory = sqlite3.Row  # This is the important part, here we are setting row_factory property of connection object to sqlite3.Row(sqlite3.Row is an implementation of row_factory)
-    user = pd.read_sql_query("SELECT * FROM SRS_user", conn, index_col=None)
-    an=pd.DataFrame([[username,password,mobile]],columns=['user_name','password','mobile_no'])
-    print(an)
-    ann=an.append(user,ignore_index=True)
-    print(ann)
-    ann.to_sql('SRS_user', conn,if_exists='replace', index=False)
+    user.objects.create(user_name=username,password=password,mobile_no=mobile)
 
-def savedetails(request):
-    s=10
+def savedetails(request,dtype):
+    uinstance = user.objects.get(user_name=request.session['username'])
+    try:
+        udata = user_details.objects.get(user_name_id=request.session['username'])
+        if dtype ==1:
+            udata.first_name=request.POST.get('FirstName')
+            udata.middle_name=request.POST.get('MiddleName')
+            udata.last_name=request.POST.get('LastName')
+            udata.address=request.POST.get('Address')
+            udata.country=request.POST.get('Country')
+            udata.state=request.POST.get('State')
+            udata.gender=request.POST.get('Gender')
+            udata.save()
+
+        elif dtype==2:
+            s=10
+        elif dtype == 3:
+            s=10
+        elif dtype==4:
+            s=10
+    except:
+        if dtype ==1:
+            user_details.objects.create(user_name_id=uinstance, first_name=request.POST.get('FirstName'),
+                                    middle_name=request.POST.get('MiddleName'), last_name=request.POST.get('LastName'),
+                                    address=request.POST.get('Address'), country=request.POST.get('Country'),
+                                    state=request.POST.get('State'), gender=request.POST.get('Gender'))
+
+        elif dtype==2:
+            s=10
+        elif dtype == 3:
+            s=10
+        elif dtype==4:
+            s=10
 
 
 def upload(username, doc, image_path):

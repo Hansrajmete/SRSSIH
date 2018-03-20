@@ -6,19 +6,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f1e5ae0-2ce9-4f9a-927b-da3de9958e98" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/ApplicantDetails.html" />
-      <change beforePath="$PROJECT_DIR$/SRS.tar.gz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cb757a51-7de3-4286-9c60-5dc9e9780c19.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/cb757a51-7de3-4286-9c60-5dc9e9780c19.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/SRS/image.py" afterPath="$PROJECT_DIR$/SRS/image.py" />
       <change beforePath="$PROJECT_DIR$/SRS/models.py" afterPath="$PROJECT_DIR$/SRS/models.py" />
-      <change beforePath="$PROJECT_DIR$/SRS/settings.py" afterPath="$PROJECT_DIR$/SRS/settings.py" />
-      <change beforePath="$PROJECT_DIR$/SRS/shaencrypt.py" afterPath="$PROJECT_DIR$/SRS/shaencrypt.py" />
-      <change beforePath="$PROJECT_DIR$/SRS/urls.py" afterPath="$PROJECT_DIR$/SRS/urls.py" />
       <change beforePath="$PROJECT_DIR$/SRS/views.py" afterPath="$PROJECT_DIR$/SRS/views.py" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/static/Slider1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/slider2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/slider3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change beforePath="$PROJECT_DIR$/templates/ApplicantDetails.html" afterPath="$PROJECT_DIR$/templates/ApplicantDetails.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,13 +58,6 @@
         <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
         <item name="SRS_user: table" type="ffe0bd85:SqliteImplModel$Table" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="SRS_user_details: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -82,11 +69,9 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SRS/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="10" column="62" lean-forward="false" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="72">
+              <caret line="5" column="64" lean-forward="false" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SRS/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="103" column="13" lean-forward="false" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+            <state relative-caret-position="299">
+              <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -112,29 +97,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <file leaf-file-name="SRS_user" pinned="false" current-in-tab="false">
+        <entry file="das://src:table:/24dd15c3/60235d76-f9d7-4246-8b6b-6eac370456c7/main.SRS_user">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="123" column="19" lean-forward="false" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="19" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#3572#3579#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#5312#5319#1#HTML" expanded="true" />
-                <element signature="e#8712#8718#0#HTML" expanded="true" />
-                <element signature="e#8718#8724#0#HTML" expanded="true" />
-                <element signature="e#8875#8881#0#HTML" expanded="true" />
-                <element signature="e#8881#8887#0#HTML" expanded="true" />
-                <element signature="e#8983#8989#0#HTML" expanded="true" />
-                <element signature="e#8989#8995#0#HTML" expanded="true" />
-                <element signature="e#9086#9092#0#HTML" expanded="true" />
-                <element signature="e#9092#9098#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="18">
+              <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SRS_user_details" pinned="false" current-in-tab="false">
+        <entry file="das://src:table:/24dd15c3/cb757a51-7de3-4286-9c60-5dc9e9780c19/main.SRS_user_details">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SRS/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-61">
+              <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,82 +130,38 @@
       <file leaf-file-name="image.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SRS/image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="72" column="8" lean-forward="false" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+            <state relative-caret-position="1692">
+              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <marker date="1521368178136" expanded="true" signature="297:336" ph="SELECT user_... SRS_user" />
-                <marker date="1521368178136" expanded="true" signature="297:337" ph="SELECT user_... SRS_user" />
-                <marker date="1521368178136" expanded="true" signature="1523:1545" ph="SELECT * FRO... SRS_user" />
-                <marker date="1521368178136" expanded="true" signature="2255:2277" ph="SELECT * FRO... SRS_user" />
-                <marker date="1521368178136" expanded="true" signature="4804:4826" ph="SELECT * FRO... SRS_user" />
+                <marker date="1521576154856" expanded="true" signature="297:336" ph="SELECT user_... SRS_user" />
+                <marker date="1521576154856" expanded="true" signature="297:337" ph="SELECT user_... SRS_user" />
+                <marker date="1521576154856" expanded="true" signature="3008:3030" ph="SELECT * FRO... SRS_user" />
+                <marker date="1521576154856" expanded="true" signature="5557:5579" ph="SELECT * FRO... SRS_user" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicantDetails.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SRS_user_details" pinned="false" current-in-tab="false">
+        <entry file="das://table:/24dd15c3/cb757a51-7de3-4286-9c60-5dc9e9780c19/main.SRS_user_details">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicantDetails.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/ApplicantDetails.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="114" column="57" lean-forward="false" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="57" />
+            <state relative-caret-position="56">
+              <caret line="122" column="208" lean-forward="false" selection-start-line="122" selection-start-column="208" selection-end-line="122" selection-end-column="208" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#3941#3947#0#HTML" expanded="true" />
-                <element signature="e#3947#3953#0#HTML" expanded="true" />
-                <element signature="e#3953#3959#0#HTML" expanded="true" />
-                <element signature="e#3959#3965#0#HTML" expanded="true" />
-                <element signature="e#4194#4200#0#HTML" expanded="true" />
-                <element signature="e#4200#4206#0#HTML" expanded="true" />
-                <element signature="e#4437#4443#0#HTML" expanded="true" />
-                <element signature="e#4443#4449#0#HTML" expanded="true" />
-                <element signature="e#4449#4455#0#HTML" expanded="true" />
-                <element signature="e#4455#4461#0#HTML" expanded="true" />
-                <element signature="e#4685#4691#0#HTML" expanded="true" />
-                <element signature="e#4691#4697#0#HTML" expanded="true" />
-                <element signature="e#4697#4703#0#HTML" expanded="true" />
-                <element signature="e#4703#4709#0#HTML" expanded="true" />
-                <element signature="e#4709#4715#0#HTML" expanded="true" />
-                <element signature="e#4715#4721#0#HTML" expanded="true" />
-                <element signature="e#4924#4930#0#HTML" expanded="true" />
-                <element signature="e#4930#4936#0#HTML" expanded="true" />
-                <element signature="e#4936#4942#0#HTML" expanded="true" />
-                <element signature="e#4942#4948#0#HTML" expanded="true" />
-                <element signature="e#4948#4954#0#HTML" expanded="true" />
-                <element signature="e#4954#4960#0#HTML" expanded="true" />
-                <element signature="e#5163#5169#0#HTML" expanded="true" />
-                <element signature="e#5169#5175#0#HTML" expanded="true" />
-                <element signature="e#5175#5181#0#HTML" expanded="true" />
-                <element signature="e#5181#5187#0#HTML" expanded="true" />
-                <element signature="e#5187#5193#0#HTML" expanded="true" />
-                <element signature="e#5193#5199#0#HTML" expanded="true" />
-                <element signature="e#5199#5205#0#HTML" expanded="true" />
-                <element signature="e#5205#5211#0#HTML" expanded="true" />
-                <element signature="e#5211#5217#0#HTML" expanded="true" />
-                <element signature="e#5409#5415#0#HTML" expanded="true" />
-                <element signature="e#5415#5421#0#HTML" expanded="true" />
-                <element signature="e#5421#5427#0#HTML" expanded="true" />
-                <element signature="e#5427#5433#0#HTML" expanded="true" />
-                <element signature="e#5433#5439#0#HTML" expanded="true" />
-                <element signature="e#5530#5536#0#HTML" expanded="true" />
-                <element signature="e#5536#5542#0#HTML" expanded="true" />
-                <element signature="e#5641#5647#0#HTML" expanded="true" />
-                <element signature="e#5647#5653#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#form#0;n#left#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#13066#13072#0#HTML" expanded="true" />
-                <element signature="e#13072#13078#0#HTML" expanded="true" />
-                <element signature="e#13229#13235#0#HTML" expanded="true" />
-                <element signature="e#13235#13241#0#HTML" expanded="true" />
-                <element signature="e#13337#13343#0#HTML" expanded="true" />
-                <element signature="e#13343#13349#0#HTML" expanded="true" />
-                <element signature="e#13440#13446#0#HTML" expanded="true" />
-                <element signature="e#13446#13452#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#5783#5789#0#HTML" expanded="true" />
+                <element signature="e#5789#5795#0#HTML" expanded="true" />
+                <element signature="e#8301#8307#0#HTML" expanded="true" />
+                <element signature="e#8307#8313#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -254,10 +198,16 @@
       <find>slider</find>
       <find>appli</find>
       <find>form</find>
-      <find>form</find>
       <find>has</find>
       <find>request</find>
       <find>login</find>
+      <find>prof</find>
+      <find>`</find>
+      <find>inde</find>
+      <find>.html</find>
+      <find>Abh</find>
+      <find>app</find>
+      <find>saved</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -274,11 +224,11 @@
         <option value="$PROJECT_DIR$/templates/Status.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/SRS/urls.py" />
-        <option value="$PROJECT_DIR$/templates/ApplicantDetails.html" />
+        <option value="src:table:/24dd15c3/cb757a51-7de3-4286-9c60-5dc9e9780c19/main.SRS_user" />
+        <option value="$PROJECT_DIR$/SRS/models.py" />
         <option value="$PROJECT_DIR$/SRS/image.py" />
         <option value="$PROJECT_DIR$/SRS/views.py" />
-        <option value="$PROJECT_DIR$/SRS/models.py" />
-        <option value="src:table:/24dd15c3/cb757a51-7de3-4286-9c60-5dc9e9780c19/main.SRS_user" />
+        <option value="$PROJECT_DIR$/templates/ApplicantDetails.html" />
       </list>
     </option>
   </component>
@@ -334,6 +284,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -355,15 +307,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="ToolWindowEvent Log.ShowToolbar" value="false" />
   </component>
@@ -435,6 +385,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -463,17 +416,17 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.502994" sideWeight="0.50883937" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53965783" sideWeight="0.49730977" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17418352" sideWeight="0.49116063" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16015936" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53965783" sideWeight="0.49730977" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1866252" sideWeight="0.49116063" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16015936" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27888447" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33625498" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.062151395" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -516,34 +469,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SRS/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#627#659#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SRS/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SRS/shaencrypt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -563,9 +488,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="10" column="53" lean-forward="false" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -595,9 +518,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#627#659#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -615,7 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -633,11 +553,10 @@
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <marker date="1521368178136" expanded="true" signature="297:336" ph="SELECT user_... SRS_user" />
-            <marker date="1521368178136" expanded="true" signature="297:337" ph="SELECT user_... SRS_user" />
-            <marker date="1521368178136" expanded="true" signature="1523:1545" ph="SELECT * FRO... SRS_user" />
-            <marker date="1521368178136" expanded="true" signature="2255:2277" ph="SELECT * FRO... SRS_user" />
-            <marker date="1521368178136" expanded="true" signature="4804:4826" ph="SELECT * FRO... SRS_user" />
+            <marker date="1521576154856" expanded="true" signature="297:336" ph="SELECT user_... SRS_user" />
+            <marker date="1521576154856" expanded="true" signature="297:337" ph="SELECT user_... SRS_user" />
+            <marker date="1521576154856" expanded="true" signature="3008:3030" ph="SELECT * FRO... SRS_user" />
+            <marker date="1521576154856" expanded="true" signature="5557:5579" ph="SELECT * FRO... SRS_user" />
           </folding>
         </state>
       </provider>
@@ -775,38 +694,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1494">
           <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/media/slider1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/media/slider2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/media/slider3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/indexx.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="253" column="0" lean-forward="false" selection-start-line="253" selection-start-column="0" selection-end-line="257" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/media/slider1.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/media/slider2.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/media/slider3.jpg" />
+    <entry file="file://$PROJECT_DIR$/templates/indexx.html" />
     <entry file="file://$PROJECT_DIR$/templates/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -822,82 +720,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-396">
           <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/24dd15c3/cb757a51-7de3-4286-9c60-5dc9e9780c19/main.SRS_applied_jobs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/web-forms2.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="66" column="18" lean-forward="false" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ApplicantDetails.html">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="114" column="57" lean-forward="false" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="57" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#3941#3947#0#HTML" expanded="true" />
-            <element signature="e#3947#3953#0#HTML" expanded="true" />
-            <element signature="e#3953#3959#0#HTML" expanded="true" />
-            <element signature="e#3959#3965#0#HTML" expanded="true" />
-            <element signature="e#4194#4200#0#HTML" expanded="true" />
-            <element signature="e#4200#4206#0#HTML" expanded="true" />
-            <element signature="e#4437#4443#0#HTML" expanded="true" />
-            <element signature="e#4443#4449#0#HTML" expanded="true" />
-            <element signature="e#4449#4455#0#HTML" expanded="true" />
-            <element signature="e#4455#4461#0#HTML" expanded="true" />
-            <element signature="e#4685#4691#0#HTML" expanded="true" />
-            <element signature="e#4691#4697#0#HTML" expanded="true" />
-            <element signature="e#4697#4703#0#HTML" expanded="true" />
-            <element signature="e#4703#4709#0#HTML" expanded="true" />
-            <element signature="e#4709#4715#0#HTML" expanded="true" />
-            <element signature="e#4715#4721#0#HTML" expanded="true" />
-            <element signature="e#4924#4930#0#HTML" expanded="true" />
-            <element signature="e#4930#4936#0#HTML" expanded="true" />
-            <element signature="e#4936#4942#0#HTML" expanded="true" />
-            <element signature="e#4942#4948#0#HTML" expanded="true" />
-            <element signature="e#4948#4954#0#HTML" expanded="true" />
-            <element signature="e#4954#4960#0#HTML" expanded="true" />
-            <element signature="e#5163#5169#0#HTML" expanded="true" />
-            <element signature="e#5169#5175#0#HTML" expanded="true" />
-            <element signature="e#5175#5181#0#HTML" expanded="true" />
-            <element signature="e#5181#5187#0#HTML" expanded="true" />
-            <element signature="e#5187#5193#0#HTML" expanded="true" />
-            <element signature="e#5193#5199#0#HTML" expanded="true" />
-            <element signature="e#5199#5205#0#HTML" expanded="true" />
-            <element signature="e#5205#5211#0#HTML" expanded="true" />
-            <element signature="e#5211#5217#0#HTML" expanded="true" />
-            <element signature="e#5409#5415#0#HTML" expanded="true" />
-            <element signature="e#5415#5421#0#HTML" expanded="true" />
-            <element signature="e#5421#5427#0#HTML" expanded="true" />
-            <element signature="e#5427#5433#0#HTML" expanded="true" />
-            <element signature="e#5433#5439#0#HTML" expanded="true" />
-            <element signature="e#5530#5536#0#HTML" expanded="true" />
-            <element signature="e#5536#5542#0#HTML" expanded="true" />
-            <element signature="e#5641#5647#0#HTML" expanded="true" />
-            <element signature="e#5647#5653#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#left#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#13066#13072#0#HTML" expanded="true" />
-            <element signature="e#13072#13078#0#HTML" expanded="true" />
-            <element signature="e#13229#13235#0#HTML" expanded="true" />
-            <element signature="e#13235#13241#0#HTML" expanded="true" />
-            <element signature="e#13337#13343#0#HTML" expanded="true" />
-            <element signature="e#13343#13349#0#HTML" expanded="true" />
-            <element signature="e#13440#13446#0#HTML" expanded="true" />
-            <element signature="e#13446#13452#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SRS/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-215">
-          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-          <folding>
-            <element signature="e#627#659#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="-1599">
+          <caret line="123" column="19" lean-forward="false" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -909,11 +754,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://src:table:/24dd15c3/cb757a51-7de3-4286-9c60-5dc9e9780c19/main.SRS_applied_jobs">
+    <entry file="das://table:/24dd15c3/cb757a51-7de3-4286-9c60-5dc9e9780c19/main.SRS_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SRS/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="64" lean-forward="false" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/24dd15c3/60235d76-f9d7-4246-8b6b-6eac370456c7/main.SRS_user">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/24dd15c3/60235d76-f9d7-4246-8b6b-6eac370456c7/main.SRS_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/24dd15c3/cb757a51-7de3-4286-9c60-5dc9e9780c19/main.SRS_user_details">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -925,76 +799,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/24dd15c3/cb757a51-7de3-4286-9c60-5dc9e9780c19/main.SRS_user_details">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SRS/models.py">
+    <entry file="file://$PROJECT_DIR$/SRS/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="62" lean-forward="false" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-61">
+          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SRS/image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="72" column="8" lean-forward="false" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+        <state relative-caret-position="1692">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <marker date="1521368178136" expanded="true" signature="297:336" ph="SELECT user_... SRS_user" />
-            <marker date="1521368178136" expanded="true" signature="297:337" ph="SELECT user_... SRS_user" />
-            <marker date="1521368178136" expanded="true" signature="1523:1545" ph="SELECT * FRO... SRS_user" />
-            <marker date="1521368178136" expanded="true" signature="2255:2277" ph="SELECT * FRO... SRS_user" />
-            <marker date="1521368178136" expanded="true" signature="4804:4826" ph="SELECT * FRO... SRS_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/24dd15c3/cb757a51-7de3-4286-9c60-5dc9e9780c19/main.SRS_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="123" column="19" lean-forward="false" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="19" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#3572#3579#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#5312#5319#1#HTML" expanded="true" />
-            <element signature="e#8712#8718#0#HTML" expanded="true" />
-            <element signature="e#8718#8724#0#HTML" expanded="true" />
-            <element signature="e#8875#8881#0#HTML" expanded="true" />
-            <element signature="e#8881#8887#0#HTML" expanded="true" />
-            <element signature="e#8983#8989#0#HTML" expanded="true" />
-            <element signature="e#8989#8995#0#HTML" expanded="true" />
-            <element signature="e#9086#9092#0#HTML" expanded="true" />
-            <element signature="e#9092#9098#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1521576154856" expanded="true" signature="297:336" ph="SELECT user_... SRS_user" />
+            <marker date="1521576154856" expanded="true" signature="297:337" ph="SELECT user_... SRS_user" />
+            <marker date="1521576154856" expanded="true" signature="3008:3030" ph="SELECT * FRO... SRS_user" />
+            <marker date="1521576154856" expanded="true" signature="5557:5579" ph="SELECT * FRO... SRS_user" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SRS/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="103" column="13" lean-forward="false" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+        <state relative-caret-position="299">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ApplicantDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="122" column="208" lean-forward="false" selection-start-line="122" selection-start-column="208" selection-end-line="122" selection-end-column="208" />
+          <folding>
+            <element signature="e#5783#5789#0#HTML" expanded="true" />
+            <element signature="e#5789#5795#0#HTML" expanded="true" />
+            <element signature="e#8301#8307#0#HTML" expanded="true" />
+            <element signature="e#8307#8313#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -52,7 +52,11 @@ def myview_job(request):
 
 def applicant_details(request):
     if request.session.has_key('username'):
-        return render(request,'ApplicantDetails.html',)
+        try:
+            udata = user_details.objects.get(user_name_id=request.session['username'])
+            return render(request, 'ApplicantDetails.html', {"uname":request.session['username'],"data":udata})
+        except:
+            return render(request,'ApplicantDetails.html',{"uname":request.session['username']})
     return render(request,'index.html',{"loginfirst" :1 })
 
 
@@ -98,14 +102,12 @@ def myview_status(request):
 def savedata(request):
     if request.session.has_key('username'):
         if 'SubmitDetails' in request.POST:
-            #savedetails(request)
-            instance = user.objects.get(user_name=request.session['username'])
-            user_details.objects.create(user_name=instance,first_name=request.POST.get('FirstName'), middle_name=request.POST.get('MiddleName'),last_name=request.POST.get('LastName'), address=request.POST.get('Address'),country=request.POST.get('Country'), state=request.POST.get('State'),gender=request.POST.get('Gender'))
+            savedetails(request,1)
             #p.save()
-            return HttpResponseRedirect('index')
-        return render(request, 'index.html', {"loginfirst": 1})
+            return render(request,'ApplicantDetails.html',{"uname":request.session['username'],"saved":"saved","data":user_details.objects.get(user_name_id=request.session['username'])
+   })
     else:
-        return HttpResponseRedirect('index')
+        return render(request, 'index.html', {"loginfirst": 1})
 
 
 
