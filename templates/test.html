@@ -1,0 +1,21 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+<title>Page Title </title>
+</head>
+<body>
+
+<h1>{{ time}}</h1>
+<p>My first paragraph.{{ hashkey}}</p>
+<div class="share_fm_dl" id="attachment_poi"></div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type = "text/ javascript"
+src="https://services.digitallocker.gov.in/requester/api/2/dl.js"
+id="dlshare"
+data-app-id="SRS"
+        data-app-hash={{ hashkey}}
+    time-stamp={{ time}}>
+</script>
+</body>
+</html> 

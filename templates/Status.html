@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SIH 2018:Job Status</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="file:///home/abhishek/SIH2018/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+</head>
+
+<body>
+  <!-- <div class="container"> -->
+  <!-- <h2>Carousel Example</h2> -->
+  <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+<style>
+.tooltip.top .tooltip-inner {
+    background-color: #dff0d8;
+    padding: 10px;
+    color: #3c763d;
+}
+</style>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#">SIH2018</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index">Home</a></li>
+          <!-- <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Application details <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li> -->
+          <li><a href="#">Application Details</a></li>
+          <li class="active"><a href="#">Status</a></li>
+          <li><a href="JobOpening">Job Opening</a></li>
+          <li><a href="#">Contact US</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user" ></span> Abhishek <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2>Applied Job Status</h2>
+    <div class="panel-group">
+
+      <div class="panel panel-success">
+        <div class="panel-heading">Applied Jobs</div>
+        <div class="panel-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Job Name</th>
+                <th>Date Of Application</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td >
+                  <a href="#" data-toggle="collapse" data-target="#Job1">Scientific Assistant-A</a>
+                  <div id="Job1" class="collapse">
+                    <hr/>
+                    Fake Scientist
+                  </div>
+                </td>
+                <td>12/03/2018</td>
+                <td>
+                  <a href="#" data-toggle="collapse" data-target="#status1">Application Under Review</a>
+                  <div id="status1" class="collapse">
+                    <hr/><ol class="ProgressBar" data-ProgressBar-steps="5">
+                      <li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Incomplete"></li><!--
+                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Submitted"></li><!--
+                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Under Review"></li><!--
+                   --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Interview: N/A"></li><!--
+                   --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" title="Application Result: N/A"></li>
+                  </ol>
+                  </div>
+                  <br/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#" data-toggle="collapse" data-target="#Job2">Researcher</a>
+                  <div id="Job2" class="collapse">
+                    <hr/>
+                    Fake Researcher
+                  </div>
+                  </td>
+                <td>11/03/2018</td>
+                <td>
+                  <a href="#" data-toggle="collapse" data-target="#status2">Application Interview Scheduled</a>
+                  <div id="status2" class="collapse">
+                    <hr/><ol class="ProgressBar" data-ProgressBar-steps="5">
+                      <li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Incomplete"></li><!--
+                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Submitted"></li><!--
+                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Under Review"></li><!--
+                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Interview: Scheduled"></li><!--
+                   --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" title="Application Result: N/A"></li>
+                  </ol>
+                  </div>
+                  <br/>
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#" data-toggle="collapse" data-target="#Job3">Clerk</a>
+                  <div id="Job3" class="collapse">
+                    <hr/>
+                    Fake Clerk
+                  </div>
+                </td>
+                <td>01/02/2018</td>
+                <td>
+                  <a href="#" data-toggle="collapse" data-target="#status3">Application: Selected</a>
+                  <div id="status3" class="collapse">
+                    <hr/><ol class="ProgressBar" data-ProgressBar-steps="5">
+                      <li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Incomplete"></li><!--
+                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Submitted"></li><!--
+                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Under Review"></li><!--
+                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Interview: Clear"></li><!--
+                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Result: Selected"></li>
+                  </ol>
+                  </div>
+                  <br/>
+                  </td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel panel-danger">
+        <div class="panel-heading">No Jobs Applied</div>
+        <div class="panel-body">
+          <h1>Sorry No Jobs Applied</h1>
+            <hr style="margin:30px;"/>
+          <p><a href = "#">Click Here</a> to See current Job Openings</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+  ol.ProgressBar {
+     margin: 0;
+     padding: 0;
+     list-style-type none;
+ }
+
+ ol.ProgressBar li {
+     display: inline-block;
+     text-align: center;
+     line-height: 1.5em;
+ }
+
+ ol.ProgressBar[data-ProgressBar-steps="2"] li { width: 49%; }
+ ol.ProgressBar[data-ProgressBar-steps="3"] li { width: 33%; }
+ ol.ProgressBar[data-ProgressBar-steps="4"] li { width: 24%; }
+ ol.ProgressBar[data-ProgressBar-steps="5"] li { width: 19%; }
+ ol.ProgressBar[data-ProgressBar-steps="6"] li { width: 16%; }
+ ol.ProgressBar[data-ProgressBar-steps="7"] li { width: 14%; }
+ ol.ProgressBar[data-ProgressBar-steps="8"] li { width: 12%; }
+ ol.ProgressBar[data-ProgressBar-steps="9"] li { width: 11%; }
+
+ ol.ProgressBar li.ProgressBar-done {
+     color: black;
+     border-bottom: 4px solid yellowgreen;
+ }
+ ol.ProgressBar li.ProgressBar-todo {
+     color: silver;
+     border-bottom: 4px solid silver;
+ }
+
+ ol.ProgressBar li:after {
+     content: "\00a0\00a0";
+ }
+ ol.ProgressBar li:before {
+     position: relative;
+     bottom: -1.2em;
+     float: left;
+     left: 50%;
+     line-height: 1em;
+ }
+ ol.ProgressBar li.ProgressBar-done:before {
+     content: "\2713";
+     color: white;
+     background-color: yellowgreen;
+     height: 2.2em;
+     width: 2.2em;
+     line-height: 2.2em;
+     border: none;
+     border-radius: 2.2em;
+ }
+ ol.ProgressBar li.ProgressBar-todo:before {
+     content: "\039F";
+     color: silver;
+     background-color: white;
+     font-size: 2.2em;
+     bottom: -0.6em;
+ }
+
+
+
+
+  </style>
+  <style>
+    .navbar {
+      margin-bottom: 0px;
+      border: 0px;
+      background-color: #073F54;
+      border-radius: 0px;
+    }
+
+    hr {
+      margin: 5px;
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0));
+    }
+
+    h1, p{
+      text-align: center;
+    }
+
+    .navbar-inverse .navbar-brand {
+      color: #fff;
+    }
+
+    .navbar-inverse .navbar-nav>li>a {
+      color: #fff;
+    }
+
+    a {
+      font-size: 17px;
+      color: #000;
+    }
+  </style>
+
+</body>
+
+</html>

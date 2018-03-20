@@ -1,0 +1,262 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SIH 2018</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="file:///home/abhishek/SIH2018/style.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <!-- <div class="container"> -->
+  <!-- <h2>Carousel Example</h2> -->
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#">SIH2018</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <!-- <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Application details <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li> -->
+          <li><a href="applicantdetails">Application Details</a></li>
+          <li><a href="Status">Status</a></li>
+          <li><a href="JobOpening">Job Opening</a></li>
+          <li><a href="#">Contact US</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            {% if username %}
+          <li><a href="#" ><span class="glyphicon glyphicon-user" ></span> {{ username }}</a></li>
+
+                <li><a href="logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                {% else %}
+                          <li><a href="#" id="SignUpBtn"><span class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
+
+                                <li><a href="#" id="SignInBtn"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+            {% endif %}
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    .carousel .item {
+      height: 650px;
+    }
+
+    .item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 650px;
+      }
+  </style>
+
+
+  <div id="Slider" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#Slider" data-slide-to="0" class="active"></li>
+      <li data-target="#Slider" data-slide-to="1"></li>
+      <li data-target="#Slider" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src= "/static/media/Slider1.jpg" alt="Slider1" style="width:100%;">
+        <!-- <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p>
+        </div> -->
+      </div>
+
+      <div class="item">
+          {% load staticfiles %}
+        <img src="/static/media/slider2.jpg" alt="Slider2" style="width:100%;">
+        <!-- <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div> -->
+      </div>
+
+      <div class="item">
+        <img src="/static/media/slider3.jpg" alt="Slider3" style="width:100%;">
+        <!-- <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div> -->
+      </div>
+
+    </div>
+
+    <a class="left carousel-control" href="#Slider" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#Slider" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="modal fade" id="SignUp" role="dialog" style="margin-top:15%">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4>Signup <b>SIH2018</b> Account </h4>
+        </div>
+        <div class="modal-body">
+          <form role="form" method="POST" enctype="multipart/form-data" action="signup">
+            {% csrf_token %}
+              <div class="form-group">
+              <input type="email" class="form-control" name="Email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="Password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="Confirm_Password" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="Mobile" maxlength="10" pattern="[7-9]{1}[0-9]{9}" title="Enter Valid Mobile No starting with 7,8 or 9" placeholder="Mobile No" required>
+            </div>
+            <hr/>
+            <button type="submit" class="btn btn-default" name="Submit_SignUp">Lets Get Started!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="modal fade" id="SignIn" role="dialog" style="margin-top:17%">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4>Login To <b>SIH2018</b> Account </h4>
+        </div>
+        <div class="modal-body">
+          <form role="form" method="POST" enctype="multipart/form-data" action="login">
+              {% csrf_token %}
+            <div class="form-group">
+              <input type="email" class="form-control" name="Email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="Password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            </div>
+            <hr/>
+            <button type="submit" class="btn btn-default" name="Submit_SignIn">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <style>
+    .navbar {
+      margin-bottom: 0px;
+      border: 0px;
+      background-color: #073F54;
+      border-radius: 0px;
+    }
+
+    .modal-dialog {
+      position: relative;
+      display: table;
+      overflow-y: auto;
+      overflow-x: auto;
+      width: auto;
+      min-width: 300px;
+      text-align: center;
+    }
+
+    input {
+      outline: none;
+      box-shadow: none !important;
+    }
+
+    .form-control {
+      margin: 0 auto;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #000000;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-radius: 0;
+      min-width: 0;
+      transition-duration: 0.2s;
+      transition-timing-function: linear;
+      width: auto;
+    }
+
+    .form-control:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-bottom: 1px solid #1DB9F3;
+    }
+
+    hr {
+      margin-top: 30px;
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0));
+    }
+
+    .navbar-inverse .navbar-brand {
+      color: #fff;
+    }
+
+    .navbar-inverse .navbar-nav>li>a {
+      color: #fff;
+    }
+  </style>
+
+  <script>
+    $(document).ready(function() {
+      $("#SignUpBtn").click(function() {
+        $("#SignUp").modal();
+      });
+    });
+    $(document).ready(function() {
+      $("#SignInBtn").click(function() {
+        $("#SignIn").modal();
+      });
+    });
+  </script>
+{% if loginfirst %}
+    <script LANGUAGE='JavaScript'>
+              window.alert('Please Login First');
+    </script>
+{% endif %}
+
+</body>
+
+</html>
