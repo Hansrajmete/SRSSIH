@@ -83,14 +83,12 @@ def login(request):
     except:
       pass
 
-    if request.session.has_key('username'):
-        return HttpResponseRedirect("index")
     if t==1:
         request.session['username']=username
     else:
         return render(
         request,
-        'JobOpening.html',
+        'index.html',{"loginfailed":1}
     )
     return HttpResponseRedirect("index")
 

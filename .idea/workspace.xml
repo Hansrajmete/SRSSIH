@@ -6,11 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f1e5ae0-2ce9-4f9a-927b-da3de9958e98" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/SRS/image.py" afterPath="$PROJECT_DIR$/SRS/image.py" />
       <change beforePath="$PROJECT_DIR$/SRS/views.py" afterPath="$PROJECT_DIR$/SRS/views.py" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/templates/JobOpening.html" afterPath="$PROJECT_DIR$/templates/JobOpening.html" />
-      <change beforePath="$PROJECT_DIR$/templates/Status.html" afterPath="$PROJECT_DIR$/templates/Status.html" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -93,24 +92,22 @@
       <file leaf-file-name="image.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SRS/image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1638">
-              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state relative-caret-position="326">
+              <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <marker date="1521576154856" expanded="true" signature="297:336" ph="SELECT user_... SRS_user" />
-                <marker date="1521576154856" expanded="true" signature="297:337" ph="SELECT user_... SRS_user" />
-                <marker date="1521576154856" expanded="true" signature="3008:3030" ph="SELECT * FRO... SRS_user" />
-                <marker date="1521576154856" expanded="true" signature="5557:5579" ph="SELECT * FRO... SRS_user" />
+                <marker date="1521659359423" expanded="true" signature="3105:3127" ph="SELECT * FRO... SRS_user" />
+                <marker date="1521659359423" expanded="true" signature="5654:5676" ph="SELECT * FRO... SRS_user" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SRS/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="99" column="34" lean-forward="false" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
+              <caret line="90" column="28" lean-forward="false" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -118,7 +115,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SRS_applied_jobs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="231" column="40" lean-forward="false" selection-start-line="231" selection-start-column="40" selection-end-line="231" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SRS_applied_jobs" pinned="false" current-in-tab="false">
         <entry file="das://table:/24dd15c3/cb757a51-7de3-4286-9c60-5dc9e9780c19/main.SRS_applied_jobs">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -180,7 +187,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>abs</find>
       <find>x.jp</find>
       <find>the_s</find>
       <find>sign</find>
@@ -210,6 +216,7 @@
       <find>Job2</find>
       <find>abhishek</find>
       <find>job</find>
+      <find>panda</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -222,15 +229,15 @@
         <option value="$PROJECT_DIR$/SRS/forms.py" />
         <option value="$PROJECT_DIR$/SRS/shaencrypt.py" />
         <option value="$PROJECT_DIR$/SRS/settings.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/SRS/urls.py" />
         <option value="src:table:/24dd15c3/cb757a51-7de3-4286-9c60-5dc9e9780c19/main.SRS_user" />
         <option value="$PROJECT_DIR$/SRS/models.py" />
-        <option value="$PROJECT_DIR$/SRS/image.py" />
         <option value="$PROJECT_DIR$/templates/ApplicantDetails.html" />
         <option value="src:table:/24dd15c3/60235d76-f9d7-4246-8b6b-6eac370456c7/main.SRS_user" />
         <option value="$PROJECT_DIR$/templates/JobOpening.html" />
         <option value="$PROJECT_DIR$/templates/Status.html" />
+        <option value="$PROJECT_DIR$/SRS/image.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/SRS/views.py" />
       </list>
     </option>
@@ -246,7 +253,7 @@
       <scroll-view-position x="0" y="0" />
     </layout>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="65" />
     <option name="y" value="-4" />
     <option name="width" value="651" />
@@ -414,7 +421,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1303" height="780" extended-state="7" />
+    <frame x="65" y="-4" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -423,7 +430,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53965783" sideWeight="0.49730977" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1866252" sideWeight="0.49116063" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25737053" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25737053" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33625498" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -533,10 +540,8 @@
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <marker date="1521576154856" expanded="true" signature="297:336" ph="SELECT user_... SRS_user" />
-            <marker date="1521576154856" expanded="true" signature="297:337" ph="SELECT user_... SRS_user" />
-            <marker date="1521576154856" expanded="true" signature="3008:3030" ph="SELECT * FRO... SRS_user" />
-            <marker date="1521576154856" expanded="true" signature="5557:5579" ph="SELECT * FRO... SRS_user" />
+            <marker date="1521659359423" expanded="true" signature="3105:3127" ph="SELECT * FRO... SRS_user" />
+            <marker date="1521659359423" expanded="true" signature="5654:5676" ph="SELECT * FRO... SRS_user" />
           </folding>
         </state>
       </provider>
@@ -734,32 +739,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SRS/image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1521576154856" expanded="true" signature="297:336" ph="SELECT user_... SRS_user" />
-            <marker date="1521576154856" expanded="true" signature="297:337" ph="SELECT user_... SRS_user" />
-            <marker date="1521576154856" expanded="true" signature="3008:3030" ph="SELECT * FRO... SRS_user" />
-            <marker date="1521576154856" expanded="true" signature="5557:5579" ph="SELECT * FRO... SRS_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://src:table:/24dd15c3/60235d76-f9d7-4246-8b6b-6eac370456c7/main.SRS_user">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="123" column="19" lean-forward="false" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -806,16 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SRS/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="99" column="34" lean-forward="false" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/24dd15c3/cb757a51-7de3-4286-9c60-5dc9e9780c19/main.SRS_jobs">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -842,6 +815,36 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SRS/image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1521659359423" expanded="true" signature="3105:3127" ph="SELECT * FRO... SRS_user" />
+            <marker date="1521659359423" expanded="true" signature="5654:5676" ph="SELECT * FRO... SRS_user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="231" column="40" lean-forward="false" selection-start-line="231" selection-start-column="40" selection-end-line="231" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SRS/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="90" column="28" lean-forward="false" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

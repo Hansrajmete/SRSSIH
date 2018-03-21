@@ -6,16 +6,19 @@ from .models import *
 # import glob, os
 # from IPython.core.display import Image
 def check_login(username,Password):
-    import sqlite3
-    import pandas as pd
-    file = "../SRS/db.sqlite3"
-    conn = sqlite3.connect(file)
-    user = pd.read_sql_query("SELECT user_name,password FROM SRS_user", conn, index_col=None)
-    k=user.loc[(user.user_name==username) & (user.password==Password)]
-    print(k)
-    if k.empty:
+    # import sqlite3
+    # import pandas as pd
+    # file = "../SRS/db.sqlite3"
+    # conn = sqlite3.connect(file)
+    # user = pd.read_sql_query("SELECT user_name,password FROM SRS_user", conn, index_col=None)
+    # k=user.loc[(user.user_name==username) & (user.password==Password)]
+    # print(k)
+    try:
+        login=user.objects.get(user_name=username,password=Password)
+        return 1
+    except:
         return 0
-    return 1
+    
 
 
 
