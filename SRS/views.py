@@ -43,10 +43,11 @@ def index(request):
 
 
 def myview_job(request):
-
+    available=jobs.objects.all();
+    applied=applied_jobs.objects.filter(user_name_id=user.objects.get(user_name=request.session['username']))
     return render(
         request,
-        'JobOpening.html',
+        'JobOpening.html',{"available1":available,"applied":applied,"username" : request.session['username']}
     )
 
 
@@ -96,7 +97,7 @@ def login(request):
 def myview_status(request):
     return render(
         request,
-        'Status.html',
+        'Status.html',{"applied":1}
     )
 
 def savedata(request):

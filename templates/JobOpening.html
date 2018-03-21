@@ -44,10 +44,10 @@
           <li><a href="#">Contact US</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Abhishek <span class="caret"></span></a>
+          <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>{{ username }} <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Logout</a></li>
+              <li><a href="applicantdetails">Profile</a></li>
+              <li><a href="logout">Logout</a></li>
             </ul>
           </li>
         </ul>
@@ -58,6 +58,7 @@
   <div class="container">
     <h2>Job Openings</h2>
     <div class="panel-group">
+                  {% if available %}
 
       <div class="panel panel-primary">
         <div class="panel-heading">Current Job Openings</div>
@@ -71,59 +72,38 @@
               </tr>
             </thead>
             <tbody>
+                      {% for job in available %}
               <tr>
                 <td>
-                  <a href="#" data-toggle="collapse" data-target="#Job1">Scientific Assistant-A</a>
-                  <div id="Job1" class="collapse">
-                    <hr/> Fake Scientist
+                  <a href="#" data-toggle="collapse" data-target="#{{ job.job_id }}">{{ job.job_name }}</a>
+                  <div id="{{ job.job_id }}" class="collapse">
+                    <hr/> {{ job.job_description }}
                     <!-- <p> -->
                     <br/><br/>
                     <button class="btn btn-primary"><span class = "glyphicon glyphicon-tag	Try it
 "></span> Apply Here</button>
                   </div>
                 </td>
-                <td>Pune</td>
-                <td>16/05/2018</td>
+                <td>{{ job.location }}</td>
+                <td>{{ job.date_of_joining }}</td>
               </tr>
-              <tr>
-                <td>
-                  <a href="#" data-toggle="collapse" data-target="#Job2">Researcher</a>
-                  <div id="Job2" class="collapse">
-                    <hr/> Fake Researcher
-                    <br/><br/>
-                    <button class="btn btn-primary"><span class = "glyphicon glyphicon-tag	Try it
-"></span> Apply Here</button>
-                  </div>
-                </td>
-                <td>Bengluru</td>
-                <td>31/12/2018</td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#" data-toggle="collapse" data-target="#Job3">Clerk</a>
-                  <div id="Job3" class="collapse">
-                    <hr/> Fake Clerk
-                    <br/><br/>
-                    <button class="btn btn-primary"><span class = "glyphicon glyphicon-tag	Try it
-"></span> Apply Here</button>
-                  </div>
-                </td>
-                <td>Mumbai</td>
-                <td>01/05/2018</td>
-              </tr>
+                      {% endfor %}
+
             </tbody>
           </table>
         </div>
       </div>
 
+                  {% else %}
       <div class="panel panel-danger">
         <div class="panel-heading">No Jobs Availabe</div>
         <div class="panel-body">
           <h1>Sorry No Jobs Availabe</h1>
           <hr style="margin:30px;" />
-          <p><a href="index.html">Click Here</a> to go to homepage</p>
+          <p><a href="index">Click Here</a> to go to homepage</p>
         </div>
       </div>
+    {% endif %}
     </div>
   </div>
 

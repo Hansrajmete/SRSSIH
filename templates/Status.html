@@ -49,13 +49,13 @@ $(document).ready(function(){
             <li><a href="#">Page 1-3</a></li>
           </ul>
         </li> -->
-          <li><a href="#">Application Details</a></li>
-          <li class="active"><a href="#">Status</a></li>
-          <li><a href="JobOpening">Job Opening</a></li>
+          <li><a href="applicantdetails">Application Details</a></li>
+          <li class="active"><a href="Status">Status</a></li>
+          <li><a href="JobOpenings">Job Opening</a></li>
           <li><a href="#">Contact US</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user" ></span> Abhishek <span class="caret"></span></a>
+          <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user" ></span> {{ username }}<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Profile</a></li>
               <li><a href="#">Logout</a></li>
@@ -68,7 +68,7 @@ $(document).ready(function(){
   <div class="container">
     <h2>Applied Job Status</h2>
     <div class="panel-group">
-
+    {% if applied %}
       <div class="panel panel-success">
         <div class="panel-heading">Applied Jobs</div>
         <div class="panel-body">
@@ -155,15 +155,16 @@ $(document).ready(function(){
           </table>
         </div>
       </div>
-
+{% else %}
       <div class="panel panel-danger">
         <div class="panel-heading">No Jobs Applied</div>
         <div class="panel-body">
           <h1>Sorry No Jobs Applied</h1>
             <hr style="margin:30px;"/>
-          <p><a href = "#">Click Here</a> to See current Job Openings</p>
+          <p><a href = "JobOpenings">Click Here</a> to See current Job Openings</p>
         </div>
       </div>
+        {% endif %}
     </div>
   </div>
 
