@@ -27,6 +27,9 @@ urlpatterns = [
     url(r'^login$', views.login, name = 'login'),
     url(r'^logout$', views.logout, name = 'logout'),
     url(r'^savedata$', views.savedata, name = 'savedata'),
+    url(r'^uploadaadhaar$', views.savedata, name = 'savedata'),
     url(r'^applicantdetails$', views.applicant_details, name = 'applicant_details'),
+
+    path('apply/<int:ID>/', views.apply_to_job),
     #url(r'^.*$', views.index, name = 'index'),
 ]

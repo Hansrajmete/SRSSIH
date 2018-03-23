@@ -2,6 +2,7 @@ import os
 import io
 from PIL import Image
 from .models import *
+from io import StringIO
 
 # import glob, os
 # from IPython.core.display import Image
@@ -77,7 +78,10 @@ def savedetails(request,dtype):
             udata.save()
 
         elif dtype==2:
+            upload(request.session['username'],1,request.FILES['aadhaarcard'])
+            print(type(request.FILES['aadhaarcard']))
             s=10
+            print(s)
         elif dtype == 3:
             s=10
         elif dtype==4:
@@ -90,23 +94,16 @@ def savedetails(request,dtype):
                                     state=request.POST.get('State'), gender=request.POST.get('Gender'))
 
         elif dtype==2:
-            s=10
+            print(request.POST.get('aadhaarcard'))
+            #upload(request.session['username'],1,request.POST.get('aadhaarcard'))
         elif dtype == 3:
             s=10
         elif dtype==4:
             s=10
 
 
-def upload(username, doc, image_path):
-    import sqlite3
-    import os
-    import pandas as pd
-    file = '/home/super--user/PycharmProjects/SRS/db.sqlite3'
-    conn = sqlite3.connect(file)
-    # conn.row_factory = sqlite3.Row  # This is the important part, here we are setting row_factory property of connection object to sqlite3.Row(sqlite3.Row is an implementation of row_factory)
-    user = pd.read_sql_query("SELECT * FROM SRS_user", conn, index_col=None)
-
-    my_image = Image.open(image_path)
+def upload(username, doc, image):
+    my_image = Image.open(StringIO(image.read()))
     add_ad = "aadhaar"
     add_pn = "pancard"
     add_hsc = "hsc"
@@ -116,12 +113,12 @@ def upload(username, doc, image_path):
     abs_path = os.path.join(os.getcwd())
     abs_path = abs_path + "/sihimages"
 
-    my_image = Image.open(image_path)
-    filename, extension = os.path.splitext(image_path)
+    my_image = Image.open(image)
+    filename, extension = os.path.splitext(image)
     # check directory created
 
     assure_path_exists(abs_path)
-    if (doc == 1):  # aadhar
+    '''if (doc == 1):  # aadhar
         my_image.save('/home/super--user/PycharmProjects/SRS/sihimages/{}_{}{}'.format(username, add_ad, extension))
 
         path = "/home/super--user/PycharmProjects/SRS/sihimages/" + username + "_" + add_ad + extension
@@ -155,8 +152,7 @@ def upload(username, doc, image_path):
         path = "/home/super--user/PycharmProjects/SRS/sihimages/" + username + "_" + add_caste + extension
 
         user.loc[user['user_name'] == username, 'caste_certificate'] = path
-    print(user)
-    user.to_sql('SRS_user', conn, if_exists='replace', index=False)
+    user.to_sql('SRS_user', conn, if_exists='replace', index=False)'''
 
 
 def replace(username, doc, image_path):
@@ -248,7 +244,3 @@ def replace(username, doc, image_path):
         path = "/home/super--user/PycharmProjects/SRS/sihimages/" + username + "_" + add_caste + extension
 
 
-def call(username, replac, doctype):
-    # if username not in dicto.keys():
-    # dicto[username] = [0, 0, 0, 0]
-    upload(username)

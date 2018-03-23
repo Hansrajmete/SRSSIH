@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <title>SIH 2018:Application Detals</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -165,10 +164,10 @@
             </left>
           </div>
           <div class="bhoechie-tab-content">
-            <h2 style="text-align: center">Upload Aadhar Card</h2>
+            <h2 style="text-align: center">Upload Aadhaar Card</h2>
             <hr/>
             <br/>
-            <form class="box" method="post" action="" enctype="multipart/form-data">
+            <form class="box" method="post" action="uploadaadhaar" enctype="multipart/form-data">
               {% csrf_token %}<div class="frame">
                 <div class="center">
                   <div class="bar"></div>
@@ -177,12 +176,13 @@
                     <div class="content">
                       <img src="http://100dayscss.com/codepen/upload.svg" class="upload">
                       <span class="filename"></span>
-                      <input type="file" class="input">
+                      <input type="file" name="aadhaarcard" class="input">
                     </div>
                   </div>
                   <img src="http://100dayscss.com/codepen/syncing.svg" class="syncing">
                   <img src="http://100dayscss.com/codepen/checkmark.svg" class="done">
-                  <div class="upload-btn">Upload file</div>
+                  <button class="upload-btn" name="aadhaar" type="submit" >Upload file</button>
+<div class="share_fm_dl" id="attachment_poi"></div>
                 </div>
               </div>
             </form>
@@ -206,6 +206,7 @@
                   <img src="http://100dayscss.com/codepen/syncing.svg" class="syncing">
                   <img src="http://100dayscss.com/codepen/checkmark.svg" class="done">
                   <div class="upload-btn">Upload file</div>
+<div class="share_fm_dl" id="attachment_poi"></div>
                 </div>
               </div>
             </form>
@@ -229,6 +230,7 @@
                   <img src="http://100dayscss.com/codepen/syncing.svg" class="syncing">
                   <img src="http://100dayscss.com/codepen/checkmark.svg" class="done">
                   <div class="upload-btn">Upload file</div>
+<div class="share_fm_dl" id="attachment_poi"></div>
                 </div>
               </div>
             </form>
@@ -252,6 +254,7 @@
                   <img src="http://100dayscss.com/codepen/syncing.svg" class="syncing">
                   <img src="http://100dayscss.com/codepen/checkmark.svg" class="done">
                   <div class="upload-btn">Upload file</div>
+<div class="share_fm_dl" id="attachment_poi"></div>
                 </div>
               </div>
             </form>
@@ -341,6 +344,15 @@
     <br/>
   </footer>
 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+                                        <script type="text/javascript"
+                                                src='https://devservices.digitallocker.gov.in/requester/api/2/dl.js'
+                                                id="dlshare"
+                                                data-app-id='SRS'
+                                                data-app-hash='{{ hash }}'
+                                                time-stamp='{{ timestamp }}'>
+                                        </script>
 </body>
 
 </html>

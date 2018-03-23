@@ -28,7 +28,7 @@ class jobs(models.Model):
     job_id = models.AutoField(primary_key=True, max_length=10)
     job_name = models.CharField(max_length=20,null=True)
     job_description = models.CharField(max_length=20,null=True)
-    date_of_joining= models.DateField(max_length=20,null=True)
+    date_of_joining = models.DateField(max_length=20,null=True)
     location = models.CharField(max_length=20,null=True)
 
 class applied_jobs(models.Model):

@@ -5,17 +5,19 @@
   <title>SIH 2018:Job Status</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="file:///home/abhishek/SIH2018/style.css">
+  <link rel="stylesheet" href="static/css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-</head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/css/navbar.css">
+  <link rel="stylesheet" href="static/css/general.css">
+  <link rel="stylesheet" href="static/css/status.css">
+  <link rel="stylesheet" href="static/css/footer.css">
+  <script src="static/js/navbar.js"></script>
 </head>
 
 <body>
-  <!-- <div class="container"> -->
-  <!-- <h2>Carousel Example</h2> -->
 
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -30,24 +32,16 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li><a href="index">Home</a></li>
-          <!-- <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Application details <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
-          </ul>
-        </li> -->
-          <li><a href="#">Application Details</a></li>
+          <li><a href="ApplicationDetails">Application Details</a></li>
           <li><a href="Status">Status</a></li>
-          <li class="active"><a href="#">Job Opening</a></li>
+          <li class="active"><a href="#">Job Openings</a></li>
           <li><a href="#">Contact US</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>{{ username }} <span class="caret"></span></a>
+          <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Abhishek <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="applicantdetails">Profile</a></li>
-              <li><a href="logout">Logout</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Logout</a></li>
             </ul>
           </li>
         </ul>
@@ -55,12 +49,12 @@
     </div>
   </nav>
 
+
   <div class="container">
     <h2>Job Openings</h2>
     <div class="panel-group">
-                  {% if available %}
-
-      <div class="panel panel-primary">
+{% if available %}
+      <div class="panel panel-success">
         <div class="panel-heading">Current Job Openings</div>
         <div class="panel-body">
           <table class="table table-striped">
@@ -72,76 +66,173 @@
               </tr>
             </thead>
             <tbody>
-                      {% for job in available %}
+            {% for job in available %}
               <tr>
                 <td>
-                  <a href="#" data-toggle="collapse" data-target="#{{ job.job_id }}">{{ job.job_name }}</a>
+                  <a href="#" data-toggle="collapse" data-target="#{{ job.job_id }}" class="ahref">{{ job.job_name }}
+                    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                  </a>
                   <div id="{{ job.job_id }}" class="collapse">
                     <hr/> {{ job.job_description }}
                     <!-- <p> -->
                     <br/><br/>
-                    <button class="btn btn-primary"><span class = "glyphicon glyphicon-tag	Try it
-"></span> Apply Here</button>
+                    <a href="apply/{{ job.job_id }}"><button class="btn btn-primary" ><span class = "glyphicon glyphicon-tag	Try it
+"></span> Apply Here</button></a>
                   </div>
                 </td>
-                <td>{{ job.location }}</td>
+                <td>{{ job.location}}</td>
                 <td>{{ job.date_of_joining }}</td>
               </tr>
-                      {% endfor %}
-
+            {% endfor %}
             </tbody>
           </table>
         </div>
       </div>
-
-                  {% else %}
-      <div class="panel panel-danger">
+{% elif avails or appls %}
+      <div class="panel panel-success">
+        <div class="panel-heading">Current Job Openings</div>
+        <div class="panel-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Job Name</th>
+                <th>Location</th>
+                <th>Joining Date</th>
+              </tr>
+            </thead>
+            <tbody>
+            {% for job in avails %}
+              <tr>
+                <td>
+                  <a href="#" data-toggle="collapse" data-target="#{{ job.job_id }}" class="ahref">{{ job.job_name }}
+                    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                  </a>
+                  <div id="{{ job.job_id }}" class="collapse">
+                    <hr/> {{ job.job_description }}
+                    <!-- <p> -->
+                    <br/><br/>
+                    <a href="apply/{{ job.job_id }}"><button class="btn btn-primary" ><span class = "glyphicon glyphicon-tag	Try it
+"></span> Apply Here</button></a>
+                  </div>
+                </td>
+                <td>{{ job.location}}</td>
+                <td>{{ job.date_of_joining }}</td>
+              </tr>
+            {% endfor %}
+            {% for job in appls %}
+              <tr>
+                <td>
+                  <a href="#" data-toggle="collapse" data-target="#{{ job.job_id }}" class="ahref">{{ job.job_name }}
+                    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                  </a>
+                  <div id="{{ job.job_id }}" class="collapse">
+                    <hr/> {{ job.job_description }}
+                    <!-- <p> -->
+                    <br/><br/>
+                    <a href="cancel/{{ job.job_id }}"><button class="btn btn-primary" ><span class = "glyphicon glyphicon-tag	Try it
+"></span> Cancel Application</button></a>
+                  </div>
+                </td>
+                <td>{{ job.location}}</td>
+                <td>{{ job.date_of_joining }}</td>
+              </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+{% else %}
+      <div class="panel panel-success">
         <div class="panel-heading">No Jobs Availabe</div>
         <div class="panel-body">
           <h1>Sorry No Jobs Availabe</h1>
           <hr style="margin:30px;" />
-          <p><a href="index">Click Here</a> to go to homepage</p>
+          <p><a href="index" class="ahref">Click Here</a> to go to homepage</p>
         </div>
       </div>
-    {% endif %}
+        {% endif %}
     </div>
   </div>
 
-
-  <style>
-    .navbar {
-      margin-bottom: 0px;
-      border: 0px;
-      background-color: #073F54;
-      border-radius: 0px;
-    }
-
-    hr {
-      margin: 5px;
-      border: 0;
-      height: 1px;
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0));
-    }
-
-    .navbar-inverse .navbar-brand {
-      color: #fff;
-    }
-
-    .navbar-inverse .navbar-nav>li>a {
-      color: #fff;
-    }
-
-    h1,
-    p {
-      text-align: center;
-    }
-
-    a {
-      font-size: 17px;
-      color: #000;
-    }
-  </style>
-
+  <footer class="page-footer font-small unique-color-dark pt-0 fixed-bottom">
+    <div class="container mt-5 mb-4 text-md-left">
+      <div class="row mt-3">
+        <br/>
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4 text-center">
+          <h6 class="text-uppercase font-weight-bold">
+                      <strong>SIH 2018</strong>
+                  </h6>
+          <hr class="hrfooter" />
+          <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+          <h6 class="text-uppercase font-weight-bold">
+                      <strong>Products</strong>
+                  </h6>
+          <hr class="hrfooter">
+          <p>
+            <a href="http://www.nielit.gov.in/content/acts-rules">Act and Rules</a>
+          </p>
+          <p>
+            <a href="http://www.nielit.gov.in/content/mou-industry-academic-institutions-universities">MoUs</a>
+          </p>
+          <p>
+            <a href="JobOpenings">Opportunities</a>
+          </p>
+          <p>
+            <a href="http://www.nielit.gov.in/node/2361">Grievance</a>
+          </p>
+          <p>
+            <a href="http://www.nielit.gov.in/content/right-information-1">RTI</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+          <h6 class="text-uppercase font-weight-bold">
+                      <strong>Useful links</strong>
+                  </h6>
+          <hr class="hrfooter">
+          <p>
+            <a href="http://meity.gov.in/">meity.gov.in</a>
+          </p>
+          <p>
+            <a href="https://india.gov.in/">india.gov.in</a>
+          </p>
+          <p>
+            <a href="https://www.mygov.in/">mygov.in</a>
+          </p>
+          <p>
+            <a href="https://mail.gov.in/iwc_static/c11n/allDomain/layout/login_gov2.jsp?lang=en-US&3.0.1.2.0_15121607&svcs=abs,mail,smime,calendar,c11n">mail.mygov.in</a>
+          </p>
+          <p>
+            <a href="http://www.nielit.gov.in/content/downloads-37">Downloads</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3">
+          <h6 class="text-uppercase font-weight-bold text-center">
+                      <strong>Contact</strong>
+                  </h6>
+          <hr class="hrfooter" />
+          <p>
+            <i class="fa fa-home mr-3"></i> &nbsp;&nbsp;NIELIT Bhawan, Plot No. 3, PSP Pocket, Sector-8, Dwarka, New Delhi-110077
+          </p>
+          <p>
+            <i class="fa fa-envelope mr-3"></i> &nbsp;&nbsp;contact@nielit.gov.in
+          </p>
+          <p>
+            <i class="fa fa-phone mr-3"></i> &nbsp;&nbsp;+91-11-2436 3330
+          </p>
+          <p>
+            <i class="fa fa-print mr-3"></i> &nbsp;&nbsp;1800116511</p>
+        </div>
+      </div>
+    </div>
+    <hr class="hrfooter" />
+    <div class="footer-copyright py-3 text-center">
+      <i style="color:grey;">© 2018 Copyright:</i> SIH2018
+      </a>
+    </div>
+    <br/>
+  </footer>
 
 </body>
 

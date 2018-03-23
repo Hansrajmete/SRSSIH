@@ -57,8 +57,8 @@ $(document).ready(function(){
         <ul class="nav navbar-nav navbar-right">
           <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user" ></span> {{ username }}<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Logout</a></li>
+              <li><a href="applicantdetails">Profile</a></li>
+              <li><a href="logout">Logout</a></li>
             </ul></li>
         </ul>
       </div>
@@ -81,76 +81,39 @@ $(document).ready(function(){
               </tr>
             </thead>
             <tbody>
+            {% for job in applied %}
+                {% for id in all_jobs %}
+                    {% if id.job_id == job.job_id_id %}
               <tr>
-                <td >
-                  <a href="#" data-toggle="collapse" data-target="#Job1">Scientific Assistant-A</a>
-                  <div id="Job1" class="collapse">
+                <td>
+                  <a href="#" data-toggle="collapse" data-target="#{{ id.job_id }}">
+
+                              {{ id.job_name }}
+                  </a>
+                  <div id="{{ id.job_id }}" class="collapse">
                     <hr/>
-                    Fake Scientist
+                      {{ id.job_description }}
                   </div>
                 </td>
-                <td>12/03/2018</td>
+                <td>{{ job.dof_app }}</td>
                 <td>
-                  <a href="#" data-toggle="collapse" data-target="#status1">Application Under Review</a>
-                  <div id="status1" class="collapse">
+                  <a href="#" data-toggle="collapse" data-target="#S{{ job.job_id_id }}">{{ job.status }}</a>
+                  <div id="S{{ job.job_id_id }}" class="collapse">
                     <hr/><ol class="ProgressBar" data-ProgressBar-steps="5">
                       <li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Incomplete"></li><!--
-                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Submitted"></li><!--
-                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Under Review"></li><!--
-                   --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Interview: N/A"></li><!--
+                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Submitted"></li><!--
+                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Under Review"></li><!--
+                   --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top"   title="Application Interview: N/A"></li><!--
                    --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" title="Application Result: N/A"></li>
                   </ol>
                   </div>
                   <br/>
                 </td>
               </tr>
-              <tr>
-                <td>
-                  <a href="#" data-toggle="collapse" data-target="#Job2">Researcher</a>
-                  <div id="Job2" class="collapse">
-                    <hr/>
-                    Fake Researcher
-                  </div>
-                  </td>
-                <td>11/03/2018</td>
-                <td>
-                  <a href="#" data-toggle="collapse" data-target="#status2">Application Interview Scheduled</a>
-                  <div id="status2" class="collapse">
-                    <hr/><ol class="ProgressBar" data-ProgressBar-steps="5">
-                      <li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Incomplete"></li><!--
-                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Submitted"></li><!--
-                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Under Review"></li><!--
-                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Interview: Scheduled"></li><!--
-                   --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" title="Application Result: N/A"></li>
-                  </ol>
-                  </div>
-                  <br/>
-                  </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#" data-toggle="collapse" data-target="#Job3">Clerk</a>
-                  <div id="Job3" class="collapse">
-                    <hr/>
-                    Fake Clerk
-                  </div>
-                </td>
-                <td>01/02/2018</td>
-                <td>
-                  <a href="#" data-toggle="collapse" data-target="#status3">Application: Selected</a>
-                  <div id="status3" class="collapse">
-                    <hr/><ol class="ProgressBar" data-ProgressBar-steps="5">
-                      <li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Incomplete"></li><!--
-                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Submitted"></li><!--
-                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Under Review"></li><!--
-                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" data-toggle="tooltip" data-placement="top" title="Application Interview: Clear"></li><!--
-                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Result: Selected"></li>
-                  </ol>
-                  </div>
-                  <br/>
-                  </td>
-                </td>
-              </tr>
+            {% endif %}
+                    {% endfor %}
+            {% endfor %}
+
             </tbody>
           </table>
         </div>
